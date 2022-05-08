@@ -1,6 +1,6 @@
 # Keeper-App-Part-2
 
-## App.jsx
+## App.js
 ```js
 import React from "react";
 import Header from "./Header";
@@ -21,6 +21,21 @@ function App() {
 }
 
 export default App;
+```
+## Note.js
+```js
+import React from "react";
 
+function Note(props) {
+  return (
+    <div className="note">
+      <h1>{props.title}</h1>
+      <p>{props.description}</p>
+    </div>
+  );
+}
+
+export default Note;
+```
 
 Created with CodeSandbox
